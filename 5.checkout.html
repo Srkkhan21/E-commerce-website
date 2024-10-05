@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.1">
+        <title>Checkout - E-Commerce</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <Body>
+        <header>
+            <h1>Checkout</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="3.category.html">Categories</a></li>
+                    <li><a href="4.cart.html">Cart</a></li>
+                    <li><a href="5.checkout.html">Checkout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--main Section-->
+        <main>
+            <h2>Enter Your Information</h2>
+            <form id="checkout-form" onsubmit="return processCheckout()">
+                <label for="name"><strong>Full Name:</strong></label><br>
+                <input type="text" id="name" name="name" placeholder="Enter Your Name" required><br><br>
+
+                <label for="email"><strong>Email:</strong></label><br>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required><br><br>
+
+                <label for="shipping"><strong>Address:</strong></label><br>
+                <textarea id="shipping" name="shipping" placeholder="Enter Your Shipping Address" required maxlength="200"></textarea><br>
+                <small><small>Max 200 Characters</small></small><br><br>
+                
+                <input type="submit" value="Complete Purchase">
+            </form>
+        </main>
+        <!--Footer Section-->
+        <footer>
+            <p>&copy; 2024 E-Commerce Website</p>
+        </footer>
+        <script src="script.js"></script>
+    </Body>
+</html>
